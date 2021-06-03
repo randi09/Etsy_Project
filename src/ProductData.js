@@ -1,4 +1,4 @@
-const ProductData = [
+export const ProductData = [
   {
     id: "28100",
     name: "Wood Grain Tumbler",
