@@ -5,7 +5,7 @@ export default function ProductCard(props) {
     <div>
       <p>Title</p>
       <p>{props.product.name}</p>
-      <img height="50" width="50" src={props.product.image} />
+      <img height="350" width="320" src={props.product.image} />
     </div>
   );
 }

@@ -8,21 +8,21 @@ import {
 } from "react-router-dom";
 import Products from "./components/Products";
 import Home from "./components/Home";
-import AboutUs from "./components/AboutUs";
+import About from "./components/About";
 import Cart from "./components/Cart";
 
 function App() {
   return (
     <div className="App">
       <div className="nav-bar">
-        <h1>React Redux Store</h1>
+        <h1>RLR Designs</h1>
         <Router>
           <div>
             <nav>
-              <Link to="/">Home</Link>
-              <Link to="/aboutus">About Us</Link>
-              <Link to="/products">Products</Link>
-              <Link to="/cart">Cart</Link>
+              <Link to="/"> Home </Link>
+              <Link to="/about"> About </Link>
+              <Link to="/products"> Products </Link>
+              <Link to="/cart"> Cart </Link>
             </nav>
           </div>
           <Switch>
@@ -34,8 +34,8 @@ function App() {
               <Products />
             </Route>
 
-            <Route path="/aboutus">
-              <AboutUs />
+            <Route path="/about">
+              <About />
             </Route>
             <Route path="/cart">
               <Cart />
