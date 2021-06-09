@@ -1,6 +1,8 @@
 import Orgonepyramid from "./images/Orgonepyramid.jpeg";
-
 import OrgonitePyramid from "./images/OrgonitePyramid.jpeg";
+import JellyFishPyramid from "./images/JellyFishPyramid.jpeg";
+import RosePyramid from "./images/RosePyramid.jpeg";
+import PurplePyramid from "./images/PurplePyramid.jpeg";
 
 export const PyramidData = [
   {
@@ -12,7 +14,7 @@ export const PyramidData = [
   {
     id: "28115",
     name: "Orgonite Pyramid",
-    price: 55.0,
+    price: 50.0,
     image: OrgonitePyramid,
   },
   {
@@ -24,7 +26,7 @@ export const PyramidData = [
   {
     id: "28117",
     name: "Rose Pyramid",
-    price: 55.0,
+    price: 50.0,
     image: RosePyramid,
   },
   {
@@ -32,4 +34,5 @@ export const PyramidData = [
     name: "Purple Pyramid",
     price: 55.0,
     image: PurplePyramid,
-  }
+  },
+];

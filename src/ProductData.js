@@ -118,8 +118,4 @@ export const ProductData = [
     price: 40.0,
     image: GrinchTumbler,
   },
-
-  {
-    image: randi,
-  },
 ];

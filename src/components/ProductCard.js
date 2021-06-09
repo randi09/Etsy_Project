@@ -10,7 +10,6 @@ export default function ProductCard(props) {
       <p>{props.product.name}</p>
       <img height="350" width="320" src={props.product.image} alt="tumblers" />
       <p>{props.product.description}</p>
-      {/* <button>Remove</button> */}
 
       <Link to={`/iproduct/${props.product.id}`}>
         <button onClick={() => setProductData(dispatch, props.product)}>

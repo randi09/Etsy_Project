@@ -11,7 +11,7 @@ import Home from "./components/Home";
 import About from "./components/About";
 import Cart from "./components/Cart";
 import SelectedProduct from "./components/SelectedProduct";
-import Pyramid from "./components/Pyramid";
+import Pyramid from "./components/PyramidCard";
 // import ProductCard from "./components/ProductCard";
 
 function App() {
@@ -24,7 +24,7 @@ function App() {
             <nav>
               <Link to="/"> Home </Link>
               <Link to="/about"> About </Link>
-              <Link to="/products"> Products </Link>
+
               <Link to="/cart"> Cart </Link>
             </nav>
           </div>

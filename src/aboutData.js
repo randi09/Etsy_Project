@@ -1,0 +1,5 @@
+const aboutData = [
+  {
+    image: randi,
+  },
+];

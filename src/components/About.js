@@ -1,5 +1,5 @@
 import React from "react";
-import { ProductData } from "../ProductData";
+
 import randi from "../images/randi.jpeg";
 
 export default function About() {
