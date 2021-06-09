@@ -1,9 +1,11 @@
 import React from "react";
+
 import { setProductData } from "../actions/selectedProductAction";
 import { useDispatch } from "react-redux";
-import { Link } from "react-router-dom";
 
-export default function ProductCard(props) {
+import { removeFromCart } from "../actions/removeFromCart";
+
+export default function CartCard(props) {
   const dispatch = useDispatch();
   return (
     <div>
@@ -12,11 +14,9 @@ export default function ProductCard(props) {
       <p>{props.product.description}</p>
       {/* <button>Remove</button> */}
 
-      <Link to={`/iproduct/${props.product.id}`}>
-        <button onClick={() => setProductData(dispatch, props.product)}>
-          View More Details
-        </button>
-      </Link>
+      <button onClick={() => removeFromCart(dispatch, props.product.id)}>
+        Remove
+      </button>
     </div>
   );
 }

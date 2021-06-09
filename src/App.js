@@ -10,6 +10,9 @@ import Products from "./components/Products";
 import Home from "./components/Home";
 import About from "./components/About";
 import Cart from "./components/Cart";
+import SelectedProduct from "./components/SelectedProduct";
+import Pyramid from "./components/Pyramid";
+// import ProductCard from "./components/ProductCard";
 
 function App() {
   return (
@@ -37,9 +40,22 @@ function App() {
             <Route path="/about">
               <About />
             </Route>
+
             <Route path="/cart">
               <Cart />
             </Route>
+
+            <Route path="/iproduct/:id">
+              <SelectedProduct />
+            </Route>
+
+            <Route path="/pyramid">
+              <Pyramid />
+            </Route>
+
+            {/* <Route path="/iproduct/:id">
+              <SelectedProduct />
+            </Route> */}
 
             <Route path="*">
               <Redirect to="/" />
