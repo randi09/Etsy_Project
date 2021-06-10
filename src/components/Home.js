@@ -1,7 +1,9 @@
 import React from "react";
 import PurplePyramid from "../images/PurplePyramid.jpeg";
-import RainbowDominoes from "../images/PurplePyramid.jpeg";
+import TattooTumbler from "../images/TattooTumbler.jpeg";
+import RainbowDominoes from "../images/RainbowDominoes.jpeg";
 import { Link } from "react-router-dom";
+//
 export default function Home() {
   return (
     <div>
@@ -11,10 +13,13 @@ export default function Home() {
         <img src={PurplePyramid} height="600" width="510" alt="" />
       </Link>
       <p>Dominoes Sets</p>
-      <Link to="/pyramid">
+      <Link to="/dominoes">
         <img src={RainbowDominoes} height="600" width="510" alt="" />
       </Link>
       <p>Tumblers</p>
+      <Link to="/tumbler">
+        <img src={TattooTumbler} height="600" width="510" alt="" />
+      </Link>
     </div>
   );
 }

@@ -1,30 +1,32 @@
 import React from "react";
 import { useState, useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
-import { addPyramidToCart } from "../actions/pyramidAction";
-import { PyramidData } from "../PyramidData";
+import { addDominoesToCart } from "../actions/dominoesAction";
+import { DominoesData } from "../DominoesData";
 import ProductCard from "../components/ProductCard";
 
-export default function PyramidCard() {
+export default function DominoesCard() {
   const [search, setSearch] = useState("");
   const dispatch = useDispatch();
-  const pyramids = useSelector((state) => state.addPyramid);
-  console.log(PyramidData);
+  const dominoes = useSelector((state) => state.addDominoes);
+  console.log(dominoes);
 
   useEffect(() => {
-    addPyramidToCart(dispatch, PyramidData);
+    addDominoesToCart(dispatch, DominoesData);
   }, []);
 
   return (
     <div>
-      <h1>Pyramids</h1>
+      <h1>Dominoes</h1>
       <input
         type="text"
         placeholder="Search"
         onChange={(e) => setSearch(e.target.value)}
       />
-      <button onClick={() => addPyramidToCart(dispatch, search)}>Search</button>
-      {pyramids.map((product) => (
+      <button onClick={() => addDominoesToCart(dispatch, search)}>
+        Search
+      </button>
+      {dominoes.map((product) => (
         <ProductCard product={product} />
       ))}
     </div>

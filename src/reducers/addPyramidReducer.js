@@ -5,7 +5,7 @@ const initialState = [];
 export const addPyramid = (state = initialState, action) => {
   switch (action.type) {
     case ADD_PYRAMID:
-      return (state = action.ProductData);
+      return (state = action.payload);
     default:
       return state;
   }

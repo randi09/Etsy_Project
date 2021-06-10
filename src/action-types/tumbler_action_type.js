@@ -9,3 +9,5 @@ export const SELECTED_PRODUCT = "SELECTED_PRODUCT";
 export const REMOVE_FROM_CART = "REMOVE_FROM_CART";
 
 export const ADD_PYRAMID = "ADD_PYRAMID";
+
+export const ADD_DOMINOES = "ADD_DOMINOES";

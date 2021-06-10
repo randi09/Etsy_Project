@@ -1,6 +1,5 @@
 import React from "react";
 
-import { setProductData } from "../actions/selectedProductAction";
 import { useDispatch } from "react-redux";
 
 import { removeFromCart } from "../actions/removeFromCart";

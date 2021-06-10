@@ -12,7 +12,9 @@ import About from "./components/About";
 import Cart from "./components/Cart";
 import SelectedProduct from "./components/SelectedProduct";
 import Pyramid from "./components/PyramidCard";
-// import ProductCard from "./components/ProductCard";
+import DominoesCard from "./components/DominoesCard";
+import TumblerCard from "./components/TumblerCard";
+import ErrorPage from "./components/ErrorPage";
 
 function App() {
   return (
@@ -24,17 +26,12 @@ function App() {
             <nav>
               <Link to="/"> Home </Link>
               <Link to="/about"> About </Link>
-
               <Link to="/cart"> Cart </Link>
             </nav>
           </div>
           <Switch>
             <Route exact path="/">
               <Home />
-            </Route>
-
-            <Route path="/products">
-              <Products />
             </Route>
 
             <Route path="/about">
@@ -53,12 +50,16 @@ function App() {
               <Pyramid />
             </Route>
 
-            {/* <Route path="/iproduct/:id">
-              <SelectedProduct />
-            </Route> */}
+            <Route path="/dominoes">
+              <DominoesCard />
+            </Route>
+
+            <Route path="/tumbler">
+              <TumblerCard />
+            </Route>
 
             <Route path="*">
-              <Redirect to="/" />
+              <ErrorPage />
             </Route>
           </Switch>
         </Router>

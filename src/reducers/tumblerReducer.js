@@ -5,7 +5,7 @@ const initialState = [];
 export const tumblerReducer = (state = initialState, action) => {
   switch (action.type) {
     case SET_TUMBLER:
-      return (state = "");
+      return (state = action.payload);
     default:
       return state;
   }

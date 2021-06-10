@@ -12,7 +12,6 @@ import TattooTumbler from "./images/TattooTumbler.jpeg";
 import TexansTumbler from "./images/TexansTumbler.jpeg";
 import UnicornTumbler2 from "./images/UnicornTumbler2.jpeg";
 import WaterSlideSunFlowerTumbler from "./images/WaterSlideSunFlowerTumbler.jpeg";
-import randi from "./images/randi.jpeg";
 
 export const ProductData = [
   {

@@ -26,6 +26,7 @@ export default function Products() {
       {products.map((product) => (
         <ProductCard product={product} />
       ))}
+      d
     </div>
   );
 }
