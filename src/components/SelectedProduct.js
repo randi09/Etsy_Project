@@ -5,7 +5,7 @@ import { addToCart } from "../actions/cartAction";
 export default function SelectedProduct(props) {
   const dispatch = useDispatch();
   const selectedProduct = useSelector((state) => state.setProduct);
-  console.log(selectedProduct);
+
   return (
     <div>
       <h1>Selected Product</h1>

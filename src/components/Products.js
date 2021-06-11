@@ -9,7 +9,7 @@ export default function Products() {
   const [search, setSearch] = useState("");
   const dispatch = useDispatch();
   const products = useSelector((state) => state.products);
-  console.log("This is products ", products);
+
   useEffect(() => {
     setProductData(dispatch, ProductData);
   }, []);

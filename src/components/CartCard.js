@@ -11,7 +11,6 @@ export default function CartCard(props) {
       <p>{props.product.name}</p>
       <img height="350" width="320" src={props.product.image} alt="tumblers" />
       <p>{props.product.description}</p>
-      {/* <button>Remove</button> */}
 
       <button onClick={() => removeFromCart(dispatch, props.product.id)}>
         Remove

@@ -9,7 +9,6 @@ export default function PyramidCard() {
   const [search, setSearch] = useState("");
   const dispatch = useDispatch();
   const pyramids = useSelector((state) => state.addPyramid);
-  console.log(PyramidData);
 
   useEffect(() => {
     addPyramidToCart(dispatch, PyramidData);

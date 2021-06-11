@@ -10,7 +10,6 @@ export default function DominoesCard() {
   const [search, setSearch] = useState("");
   const dispatch = useDispatch();
   const tumblers = useSelector((state) => state.tumblerReducer);
-  console.log(tumblers);
 
   useEffect(() => {
     setProductData(dispatch, ProductData);

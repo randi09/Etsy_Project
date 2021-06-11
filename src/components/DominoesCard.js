@@ -9,7 +9,6 @@ export default function DominoesCard() {
   const [search, setSearch] = useState("");
   const dispatch = useDispatch();
   const dominoes = useSelector((state) => state.addDominoes);
-  console.log(dominoes);
 
   useEffect(() => {
     addDominoesToCart(dispatch, DominoesData);
