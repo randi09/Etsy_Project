@@ -1,11 +1,5 @@
 import "./App.css";
-import {
-  BrowserRouter as Router,
-  Route,
-  Switch,
-  Link,
-  Redirect,
-} from "react-router-dom";
+import { BrowserRouter as Router, Route, Switch, Link } from "react-router-dom";
 import Products from "./components/Products";
 import Home from "./components/Home";
 import About from "./components/About";
@@ -16,8 +10,10 @@ import DominoesCard from "./components/DominoesCard";
 import TumblerCard from "./components/TumblerCard";
 import ErrorPage from "./components/ErrorPage";
 import "bootstrap/dist/css/bootstrap.min.css";
-import { ButtonGroup, Form, FormControl, Nav, Navbar } from "react-bootstrap";
-import { Button } from "bootstrap";
+import { Nav, Navbar } from "react-bootstrap";
+import ShoppingCartSharpIcon from "@material-ui/icons/ShoppingCartSharp";
+import HomeIcon from "@material-ui/icons/Home";
+import InfoIcon from "@material-ui/icons/Info";
 
 function App() {
   return (
@@ -30,12 +26,18 @@ function App() {
                 RLR Designs
               </Navbar.Brand>
               <Nav className="mr-auto nav-links">
-                <Link to="/"> Home </Link>
-                <Link to="/about"> About </Link>
-                <Link to="/cart"> Cart </Link>
+                <Link to="/">
+                  {" "}
+                  <HomeIcon />{" "}
+                </Link>
+                <Link to="/about">
+                  <InfoIcon />{" "}
+                </Link>
               </Nav>
               <div>
-                <p>Shopping Cart</p>
+                <Link className="cart-icon" to="/cart">
+                  <ShoppingCartSharpIcon />{" "}
+                </Link>
               </div>
             </Navbar>
           </div>

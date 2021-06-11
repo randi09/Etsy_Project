@@ -17,14 +17,7 @@ export default function DominoesCard() {
   return (
     <div>
       <h1>Dominoes</h1>
-      <input
-        type="text"
-        placeholder="Search"
-        onChange={(e) => setSearch(e.target.value)}
-      />
-      <button onClick={() => addDominoesToCart(dispatch, search)}>
-        Search
-      </button>
+
       {dominoes.map((product) => (
         <ProductCard product={product} />
       ))}

@@ -1,5 +1,6 @@
 .header {
   font-family: "Dancing Script", cursive;
+  color: #222224;
 }
 .nav-links a {
   text-decoration: none;
@@ -11,4 +12,37 @@
 }
 .main-container {
   background-color: black;
+}
+
+.about-content {
+  font-style: italic;
+  font-family: cursive;
+  font-size: 30px;
+  text-shadow: 1em;
+  color: #222224;
+  font-weight: bold;
+  margin: 13px;
+  padding: 13px;
+}
+
+p {
+  font-style: italic;
+  font-family: cursive;
+  font-size: 20px;
+  text-shadow: 1em;
+  color: #222224;
+  text-decoration: slategray;
+}
+
+link {
+  font-style: italic;
+  font-family: cursive;
+  font-size: 30px;
+  text-shadow: 1em;
+  color: #222224;
+  font-weight: bolder;
+}
+
+.cart-icon {
+  color: white;
 }

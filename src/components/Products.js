@@ -17,11 +17,6 @@ export default function Products() {
   return (
     <div>
       <h1>Products</h1>
-      <input
-        type="text"
-        placeholder="Search"
-        onChange={(e) => setSearch(e.target.value)}
-      />
       <button onClick={() => setProductData(dispatch, search)}>Search</button>
       {products.map((product) => (
         <ProductCard product={product} />

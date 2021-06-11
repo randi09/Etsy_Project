@@ -17,12 +17,7 @@ export default function PyramidCard() {
   return (
     <div>
       <h1>Pyramids</h1>
-      <input
-        type="text"
-        placeholder="Search"
-        onChange={(e) => setSearch(e.target.value)}
-      />
-      <button onClick={() => addPyramidToCart(dispatch, search)}>Search</button>
+
       {pyramids.map((product) => (
         <ProductCard product={product} />
       ))}
