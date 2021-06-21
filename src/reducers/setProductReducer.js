@@ -1,6 +1,6 @@
 import { SELECTED_PRODUCT } from "../action-types/tumbler_action_type";
 
-const initialState = {};
+const initialState = [];
 
 export const setProduct = (state = initialState, action) => {
   switch (action.type) {

@@ -12,6 +12,7 @@
 }
 .main-container {
   background-color: black;
+  flex-direction: row;
 }
 
 .about-content {
